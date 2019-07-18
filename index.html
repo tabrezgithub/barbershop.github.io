@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Barbershop</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.9.2.custom/css/base/jquery-ui-1.9.2.custom.min.css"><!-- datepicker -->
+
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/><!-- owl crousel -->
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/><!-- owl crousel -->
+
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/><!-- slick -->
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/><!-- slick -->
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<link rel="shortcut icon" type="images" href="images/favicon.ico">
+</head>
+
+<body>
+	<!-- header start -->
+	<div class="container-fluid header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-4 py-2">
+					<div class="media">
+						<span class="icon-phone align-self-center mr-2 icons"></span>
+						<div class="media-body mt-1">
+							<h6>1-1800-00-000 <br> 1-1800-00-000</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3 col-4 py-2">
+					<div class="media">
+						<span class="icon-location align-self-center mr-2 icons"></span>
+						<div class="media-body mt-1">
+							<h6>11301, West Olympic Boulevard, New York, USA</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3 col-4 py-2">
+					<div class="media">
+						<span class="icon-clock align-self-center mr-2 icons"></span>
+						<div class="media-body mt-1">
+							<h6>Mon - Fri <br> 9:00 - 18:00</h6>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-3 py-3">
+					<form class="form-inline justify-content-center" action="#">
+    					<input class="form-control form-control-sm mr-2" type="text" placeholder="Search...">
+   	 					<button class="btn-sm" type="submit"><span class="icon-search"></span></button>
+  					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end of header -->
+
+
+	<!-- navbar start -->
+	<div class="container-fluid navbar_container sticky-top">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg">
+				<!-- brand logo -->
+	  			<a class="navbar-brand" href="index.html"><img src="images/logo.png" class="mx-auto d-block"/></a>
+
+	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+	    			<div class="burger_btn" onclick="myFunction(this)">
+  						<div class="bar1"></div>
+ 						<div class="bar2"></div>
+  						<div class="bar3"></div>
+					</div>
+	  			</button>
+
+	  			<!-- navbar links -->
+	  			<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+	    			<ul class="navbar-nav">
+				        <li class="nav-item active">
+				      		<a class="nav-link px-3" href="index.html">Home <span class="sr-only">(current)</span></a>
+				        </li>
+					    <li class="nav-item">
+					        <a class="nav-link px-3" href="#ABOUTUS">About Us</a>
+					    </li>
+					    
+	      				<li class="nav-item dropdown">
+	        				<a class="nav-link dropdown-toggle px-3" href="#our_services_container" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+	        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          					<a class="dropdown-item" href="#haircut">Hair Cut</a>
+	          					<a class="dropdown-item" href="#hairstyling">Hair Styling</a>
+	          					<a class="dropdown-item" href="#hairwash">Hair Wash</a>
+	          					<a class="dropdown-item" href="#shaving">Shaving</a>
+	        				</div>
+	      				</li>
+
+	      				<li class="nav-item dropdown">
+	        				<a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Barbers</a>
+	        				<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          					<a class="dropdown-item" href="#SmithHoward">Smith Howard</a>
+	          					<a class="dropdown-item" href="#JohnsonDiaz">Johnson Diaz</a>
+	          					<a class="dropdown-item" href="#WilliamsFoster">Williams Foster</a>
+	          					<a class="dropdown-item" href="#JonesTurner">Jones Turner</a>
+	          					<a class="dropdown-item" href="#BrownRussell">Brown Russell</a>
+	          					<a class="dropdown-item" href="#DavisClark">Davis Clark</a>
+	          					<a class="dropdown-item" href="#MillerWalker">Miller Walker</a>
+	          					<a class="dropdown-item" href="#MartinLee">Martin Lee</a>
+	          					<a class="dropdown-item" href="#RobinsonEvans">Robinson Evans</a>
+	          					<a class="dropdown-item" href="#WatsonBannett">Watson Bannett</a>
+	        				</div>
+	      				</li>
+
+					    <li class="nav-item">
+					        <a class="nav-link px-3" href="#TESTIMONIALS">Testimonials</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link px-3" href="#PRICES">Prices</a>
+					    </li>
+					    <li class="nav-item">
+					        <a class="nav-link px-3" href="#">Contact Us</a>
+					    </li>
+	    			</ul>
+	  			</div>
+			</nav>
+		</div>
+	</div>
+	<!-- end of navbar -->
+
+
+	<!-- carousel container start -->
+  	<div id="carouselCaptions" class="carousel slide carousel-fade carousel_container" data-ride="carousel">
+
+  		<!-- carousel indicators start -->
+		<ol class="carousel-indicators">
+		    <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselCaptions" data-slide-to="1"></li>
+		    <li data-target="#carouselCaptions" data-slide-to="2"></li>
+		</ol><!-- end of carousel indicators -->
+
+		<!-- carousel ineer start -->
+    	<div class="carousel-inner">
+      		<div class="carousel-item active">
+        		<img src="images/img1.jpg" class="d-block w-100" alt="...">
+        		<div class="carousel-caption d-none d-md-block">
+          			<h1>WELCOME<br> TO THE<br> <span style="color: #ffc306;">BARBERSHOP</h1>
+          			<button type="button" class="btn btn-sm">Make An Appointment</button>
+        		</div>
+      		</div>
+
+
+      		<div class="carousel-item">
+        		<img src="images/img2.jpg" class="d-block w-100" alt="...">
+        		<div class="carousel-caption d-none d-md-block">          			
+          			<h1>WELCOME<br> TO THE<br> <span style="color: #ffc306;">BARBERSHOP</h1>
+          			<button type="button" class="btn btn-sm">Make An Appointment</button>
+        		</div>
+      		</div>
+
+      		<div class="carousel-item">
+        		<img src="images/img3.jpg" class="d-block w-100" alt="...">
+      		</div>
+		</div><!-- end of carousel ineer -->
+
+		<!-- carousel slider button start -->
+    	<a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+      		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      		<span class="sr-only">Previous</span>
+    	</a>
+    	<a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+      		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+      		<span class="sr-only">Next</span>
+    	</a><!-- end of carousel slider button -->
+	</div>
+	<!-- end of carousel container -->
+
+
+	<!-- about us container start -->
+	<div class="container-fluid aboutus_container" id="ABOUTUS">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">ABOUT US</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 pb-sm-0 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+			<div class="row pb-5 card_row">
+				<div class="col-sm-4 col-12">
+					<div class="card card_box" style="border-color: #ffc306;">
+						<img src="images/img4.jpg" class="card-img-top mx-auto d-block image"/>
+						<div class="card-body overlay">
+							<div class="text">
+								<h5 class="card-title text-center heading_text">New York's No. 1 Barbershop</h5>
+								<div class="hr_line mx-auto d-block my-3"></div>
+								<p class="card-text text-center body_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-12">
+					<div class="card card_box" style="border-color: #ffc306;">
+						<img src="images/img5.jpg" class="card-img-top mx-auto d-block image"/>
+						<div class="card-body overlay">
+							<div class="text">
+								<h5 class="card-title text-center heading_text">Professional Barbers</h5>
+								<div class="hr_line mx-auto d-block my-3"></div>
+								<p class="card-text text-center body_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 col-12">
+					<div class="card card_box" style="border-color: #ffc306;">
+						<img src="images/img6.jpg" class="card-img-top mx-auto d-block image"/>
+						<div class="card-body overlay">
+							<div class="text">
+								<h5 class="card-title text-center heading_text">Branded Products</h5>
+								<div class="hr_line mx-auto d-block my-3"></div>
+								<p class="card-text text-center body_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of about us container -->
+
+
+	<!-- our services container start -->
+	<div class="container-fluid our_services_container" id="SERVICES">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">OUR SERVICES</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 pb-sm-0 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+			<div class="row media_row">
+				<div class="col-sm-6 col-12 mb-4" id="haircut">
+					<div class="media p-3">
+						<span class="icon-haircut align-self-center service_icons mr-4 ml-3"></span>
+						<div class="media-body">
+							<h5>Hair Cut</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-12 mb-4" id="hairstyling">
+					<div class="media p-3">
+						<span class="icon-hairstyling align-self-center service_icons mr-4 ml-3"></span>
+						<div class="media-body">
+							<h5>Hair Styling</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+
+			<div class="row pb-5 media_row">
+				<div class="col-sm-6 col-12 mb-4" id="hairwash">
+					<div class="media p-3">
+						<span class="icon-hairwash align-self-center service_icons mr-4 ml-3"></span>
+						<div class="media-body">
+							<h5>Hair Wash</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-12" id="shaving">
+					<div class="media p-3">
+						<span class="icon-shaving align-self-center service_icons mr-4 ml-3"></span>
+						<div class="media-body">
+							<h5>Shaving</h5>
+	        				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of our sevices container -->
+
+
+	<!-- appointment container start -->
+	<div class="container-fluid appointment_container" id="">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">MAKE AN APPOINTMENT</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 pb-sm-0 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+			<div class="row pb-5">
+				<div class="container">
+				<form action="#">
+					<div class="form-row justify-content-center">
+						<div class="col-sm-3 mb-3 mb-sm-4">
+							<input type="text" name="name" class="form-control" placeholder="Name" required>
+						</div>
+
+						<div class="col-sm-3 mb-3 mb-sm-4">
+							<input type="tel" name="phone" class="form-control" placeholder="Phone" required>
+						</div>
+					</div>
+
+					<div class="form-row justify-content-center">
+						<div class="col-sm-3 mb-3 mb-sm-4">
+		   					<select name="service" id="service" class="form-control serivce" required>
+								<option value="select" selected="1"  disabled selected>Service</option>
+								<option value="Burj Khalifa, Dubai">Hair Cut</option>
+								<option value="Taj Mahal, India">Hair Styling</option>
+								<option value="Sheikh Zayed Mosque, Abu Dhabi">Hair Wash</option>
+								<option value="Angkor Wat, Cambodia">Shaving</option>
+							</select>
+						</div>
+
+						<div class="col-sm-3 mb-3 mb-sm-4">
+							<select name="barber" id="barber" class="form-control barber" required>
+								<option value="Barbers" selected="1"  disabled selected>Barbers</option>
+								<option value="Smith Howard">Smith Howard</option>
+								<option value="Johnson Diaz">Johnson Diaz</option>
+								<option value="Williams Foster">Williams Foster</option>
+								<option value="Jones Turner">Jones Turner</option>
+								<option value="Brown Russell">Brown Russell</option>
+								<option value="Davis Clark">Davis Clark</option>
+								<option value="Miller Walker">Miller Walker</option>
+								<option value="Martin Lee">Martin Lee</option>
+								<option value="Robinson Evans">Robinson Evans</option>
+								<option value="Watson Bannett">Watson Bannett</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="form-row justify-content-center">
+						<div class="col-sm-3 mb-3 mb-sm-4">
+							<input type="Email" name="email" class="form-control" placeholder="Email" required>
+						</div>
+
+						<div class="col-sm-3 mb-3 mb-sm-4">
+							<input type="text" name="date" class="form-control date" id="datepicker" autocomplete="off"  placeholder="Select Date" required>
+						</div>
+					</div>
+
+					<div class="form-row justify-content-center">
+						<div class="col-sm-6 mb-3 mb-sm-4">
+							<textarea rows="3" class="form-control" placeholder="Message"></textarea>
+						</div>
+					</div>
+
+					<div class="form-row justify-content-center">
+						<div class="col-sm-6">
+							<button type="button" class="btn">Make An Appointment</button>
+						</div>
+					</div>
+				</form>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of appointment container -->
+
+
+	<!-- barbers container start -->
+	<div class="container-fluid barbers_container" id="">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">OUR BARBERS</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 h6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+			<div class="row pb-5 barbers_slider_row">
+			<div class="container wrapper">
+				<div class="owl-carousel owl-theme">
+				    <div class="item mt-3" id="SmithHoward">
+				    	<div class="card">
+				    		<img src="images/Barber1.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Smith Howard</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="JohnsonDiaz">
+				    	<div class="card">
+				    		<img src="images/Barber2.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Johnson Diaz</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="WilliamsFoster">
+						<div class="card">
+				    		<img src="images/Barber3.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Williams Foster</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="JonesTurner">
+						<div class="card">
+				    		<img src="images/Barber4.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Jones Turner</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="BrownRussell">
+						<div class="card">
+				    		<img src="images/Barber5.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Brown Russell</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="DavisClark">
+						<div class="card">
+				    		<img src="images/Barber6.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Davis Clark</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="MillerWalker">
+						<div class="card">
+				    		<img src="images/Barber7.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Miller Walker</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="MartinLee">
+						<div class="card">
+				    		<img src="images/Barber8.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Martin Lee</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="RobinsonEvans">
+						<div class="card">
+				    		<img src="images/Barber9.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Robinson Evans</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="item mt-3" id="WatsonBannett">
+						<div class="card">
+				    		<img src="images/Barber10.jpg" class="img-fluid img-thumbnail card-img-top"/>
+				    		<div class="card-body">
+				    			<h5 class="card-title">Watson Bannett</h5>
+				    			<h6 class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				    			<button type="button" class="btn-sm mt-2">See Profile</button>
+				    		</div>
+				    	</div>
+				    </div>
+				</div>
+			</div><!-- end of container -->
+		</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of barbers container -->
+
+
+	<!-- client container start -->
+	<div class="container-fluid client_container" id="TESTIMONIALS">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">OUR CLIENT SAY</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 pb-sm-0 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+			<div class="row pb-5 client_slider_row">
+				<div class="container">
+					<div class="slick_row">
+						<div class="slick">
+						  	<div class="col-sm-8 offset-sm-2 text-center">
+						  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						  		<div class="col-sm-3 col-6 mx-auto d-block">
+						  			<img src="images/Client1.jpg" class="img-fluid img-thumbnail rounded-circle"/>
+						  			<h5 class="mt-2">Tony Stark</h5>
+						  		</div>
+						  	</div>
+
+						  	<div class="col-sm-8 offset-sm-2 text-center">
+						  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						  		<div class="col-sm-3 col-6 mx-auto d-block">
+						  			<img src="images/Client2.jpg" class="img-fluid img-thumbnail rounded-circle"/>
+						  			<h5 class="mt-2">Nick Fury</h5>
+						  		</div>
+						  	</div>
+
+	  						<div class="col-sm-8 offset-sm-2 text-center">
+						  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						  		<div class="col-sm-3 col-6 mx-auto d-block">
+						  			<img src="images/Client3.jpg" class="img-fluid img-thumbnail rounded-circle"/>
+						  			<h5 class="mt-2">Steve Smith</h5>
+						  		</div>
+						  	</div>
+
+						  	<div class="col-sm-8 offset-sm-2 text-center">
+						  		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						  		<div class="col-sm-3 col-6 mx-auto d-block">
+						  			<img src="images/Client4.jpg" class="img-fluid img-thumbnail rounded-circle"/>
+						  			<h5 class="mt-2">David Warner</h5>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of client container -->
+
+
+	<!-- pricing container start -->
+	<div class="container-fluid pricing_container" id="PRICES">
+		<div class="container">
+			<div class="row justify-content-center py-sm-5 pt-4">
+				<h2 class="col-12 text-center">OUR PRICING</h2>
+				<p class="col-12 text-center">
+					<div class="hr_line mx-2 my-auto"></div>
+					<span class="icon-mustache mx-2 mustache_icon"></span>
+					<div class="hr_line mx-2  my-auto"></div>
+				</p>
+				<h6 class="col-12 text-center mt-sm-2 pb-sm-0 pb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h6>
+			</div><!-- end of row -->
+
+
+			<div class="row pb-5 justify-content-center">
+				<div class="col-sm-6 col-12">
+					<div class="card mb-4">
+		  				<div class="card-header text-center"><h5>MAN</h5></div>
+		  				<div class="card-body">
+		    				<h6 class="card-title py-2 px-3">Hair Cut <span class="float-right">$ 15</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Wash <span class="float-right">$ 12</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Styling <span class="float-right">$ 20</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Color <span class="float-right">$ 15</span></h6>
+		    				<h6 class="card-title py-2 px-3">Head Shave <span class="float-right">$ 15</span></h6>
+		    				<h6 class="card-title py-2 px-3">Shaving <span class="float-right">$ 15</span></h6>
+		  				</div>
+		  				<div class="card-footer text-center"><h6>APPOINTMENT</h6></div>
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-12">
+					<div class="card mb-4">
+		  				<div class="card-header text-center"><h5>WOMAN</h5></div>
+		  				<div class="card-body">
+		    				<h6 class="card-title py-2 px-3">Hair Cut <span class="float-right">$ 20</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Wash <span class="float-right">$ 12</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Styling <span class="float-right">$ 30</span></h6>
+		    				<h6 class="card-title py-2 px-3">Hair Color <span class="float-right">$ 45</span></h6>
+		    				<h6 class="card-title py-2 px-3">Styling & Color <span class="float-right">$ 60</span></h6>
+		    				<h6 class="card-title py-2 px-3">Styling & Hair Cut <span class="float-right">$ 45</span></h6>
+		  				</div>
+		  				<div class="card-footer text-center"><h6>APPOINTMENT</h6></div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of pricing container -->
+
+
+	<!-- bottom container start -->
+	<div class="container-fluid bottom_container">
+		<div class="container py-sm-5">
+			<div class="row py-5">
+				<div class="col-sm-3 col-12 py-3 py-sm-0">
+					<h5 class="mb-4">SUBSCRIBE</h5>
+
+					<h6 class="mb-4" style="color: #fff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+
+					<form class="" action="#">
+    					<div class="input-group">
+  							<input type="email" class="form-control" placeholder="Email" style="color: #ffc306;">
+  							<div class="input-group-append">
+    							<button  type="button" class="btn btn-outline-warning"><span class="icon-send"></span></button>
+  							</div>
+						</div>
+  					</form>
+				</div>
+
+				<div class="col-sm-3 col-12 py-3 py-sm-0">
+					<h5 class="mb-4">WORKING HOURS</h5>
+
+					<ul>
+						<li style="color: #ffc306;">MON <span class="float-right">9:00 - 18:00</span></li>
+						<li style="color: #ffc306;">TUE <span class="float-right">9:00 - 18:00</span></li>
+						<li style="color: #ffc306;">WED <span class="float-right">9:00 - 18:00</span></li>
+						<li style="color: #ffc306;">THU <span class="float-right">9:00 - 18:00</span></li>
+						<li style="color: #ffc306;">FRI <span class="float-right">9:00 - 16:00</span></li>
+						<li style="color: #ffc306;">SAT <span class="float-right">10:00 - 14:00</span></li>
+						<li style="color: #ffc306;">SUN <span class="float-right">Output</span></li>
+					</ul>
+				</div>
+
+				<div class="col-sm-3 col-12 py-3 py-sm-0">
+					<h5 class="mb-4">LATEST FROM BLOG</h5>
+
+					<h6 style="color: #ffc306;">Lorem Ipsum:-</h6>
+					<h6 class="mb-3" style="color: #fff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+
+					<h6 style="color: #ffc306;">Lorem Ipsum:-</h6>
+					<h6 style="color: #fff;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+				</div>
+
+				<div class="col-sm-3 col-12 py-3 py-sm-0">
+					<h5 class="mb-4">INSTAGRAM</h5>
+
+					<div class="row mb-4">
+						<div class="col-4">
+							<img src="images/instagram1.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+
+						<div class="col-4">
+							<img src="images/instagram2.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+
+						<div class="col-4">
+							<img src="images/instagram3.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-4">
+							<img src="images/instagram4.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+
+						<div class="col-4">
+							<img src="images/instagram5.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+
+						<div class="col-4">
+							<img src="images/instagram6.jpg" class="img-fluid img-thumbnail mx-auto d-block"/>
+						</div>
+					</div>
+				</div>
+			</div><!-- end of row -->
+		</div><!-- end of container -->
+	</div>
+	<!-- end of bottom container -->
+
+
+	<!-- footer container start -->
+	<div class="container-fluid py-2 footer_container">
+		<div class="col-12">
+			<h5 class="text-center">Copyright © 2019 Barbershop. All Right Reserved.</h5>
+		</div>
+	</div>
+	<!-- end of footer container -->
+
+
+
+
+
+
+
+	<script src="jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"></script><!-- jquery file -->
+
+	<script src="jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"></script><!-- datepicker jquery file -->
+
+	<script src="js/owl.carousel.min.js"></script><!-- owl carousel jquery file -->
+
+	<script type="text/javascript" src="slick/slick.min.js"></script><!-- slick jquery file -->
+
+
+	<!-- jquery start -->
+	<script>
+		$(document).ready(function(){
+			$('#datepicker').datepicker({
+				dateFormat: "dd-mm-yy",
+				changeMonth: true,
+				changeYear: true
+			});
+
+			$('.slick').slick();
+
+			$('.owl-carousel').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        768:{
+			            items:3
+			        },
+			        1000:{
+			            items:4
+			        },
+			        1280:{
+			            items:5
+			        }
+			    }
+			});
+
+		})
+	</script>
+	<!-- end of jquery -->
+
+
+	<!-- javascript start -->
+	<script>
+		function myFunction(x) {
+		  x.classList.toggle("change");
+		}
+	</script>
+	<!-- end of javascript -->
+
+
+
+</body>
+</html>
